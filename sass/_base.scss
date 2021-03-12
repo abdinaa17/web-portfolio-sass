@@ -1,5 +1,7 @@
-$primary-clr: #444;
-$secondary-clr: #eece1a;
+// $primary-clr: #444;
+$primary-clr: #ee9980;
+// $secondary-clr: #eece1a;
+$secondary-clr: #1a8fee;
 $show-home-image: true;
 $home-image: url(https://images.pexels.com/photos/2058128/pexels-photo-2058128.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
 $background-opacity: 0.9;
@@ -26,5 +28,31 @@ $background-opacity: 0.9;
         z-index: -3;
       }
     }
+  }
+}
+
+// media query
+
+@mixin mediaSmall {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMedium {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLarge {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
