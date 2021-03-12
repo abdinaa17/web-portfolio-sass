@@ -1,0 +1,14 @@
+{
+  "name": "web-portfolio",
+  "version": "1.0.0",
+  "description": "( responsive web)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o dist/css/ --recursive"
+  },
+  "author": "Abdinaa",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
