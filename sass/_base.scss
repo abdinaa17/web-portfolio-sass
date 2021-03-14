@@ -1,7 +1,7 @@
 // $primary-clr: #444;
-$primary-clr: #ee9980;
+$primary-clr: #000;
 // $secondary-clr: #eece1a;
-$secondary-clr: #1a8fee;
+$secondary-clr: #ee1a25;
 $show-home-image: true;
 $home-image: url(https://images.pexels.com/photos/2058128/pexels-photo-2058128.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
 $background-opacity: 0.9;
@@ -28,6 +28,14 @@ $background-opacity: 0.9;
         z-index: -3;
       }
     }
+  }
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
   }
 }
 

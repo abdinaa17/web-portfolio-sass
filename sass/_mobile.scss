@@ -41,6 +41,30 @@
       width: 120px;
     }
   }
+
+  .about-info {
+    flex-direction: column;
+
+    .portrait {
+      width: 100%;
+      height: 250px;
+      margin-bottom: 2rem;
+    }
+
+    .bio {
+      width: 100%;
+    }
+  }
+
+  .about-job {
+    flex-direction: column;
+
+    .job {
+      border-bottom: $secondary-clr 2px solid;
+      border-right: none;
+      margin: 1rem 0;
+    }
+  }
 }
 
 @include mediaSmall {
