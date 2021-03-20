@@ -141,12 +141,13 @@ main {
     color: set-text-color($secondary-clr);
   }
 
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: darken($primary-clr, 10);
-  color: set-text-color($primary-clr);
-  height: 60px;
+  #main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-clr, 10);
+    color: set-text-color($primary-clr);
+    height: 60px;
+  }
 }
 
 @import "mobile";

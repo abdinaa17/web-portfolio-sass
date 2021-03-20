@@ -207,13 +207,12 @@ main {
   .btn:hover {
     background: #ee1a25;
     color: #000; }
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #100e0e;
-  color: #fff;
-  height: 60px; }
+  .btn #main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: #100e0e;
+    color: #fff;
+    height: 60px; }
 
 @media screen and (max-width: 768px) {
   main {
