@@ -134,20 +134,41 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: none;
-  margin-bottom: 0.3rem;
+  margin: 0.3rem 0;
+  border-radius: 5px;
 
   &:hover {
     background: $secondary-clr;
     color: set-text-color($secondary-clr);
   }
+}
 
-  #main-footer {
-    text-align: center;
-    padding: 1rem;
-    background: darken($primary-clr, 10);
-    color: set-text-color($primary-clr);
-    height: 60px;
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-clr, 50);
+  color: #111;
+
+  i {
+    margin-right: 1rem;
   }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-clr, 50);
+  color: #fff;
+
+  i {
+    margin-right: 1rem;
+  }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-clr, 10);
+  color: set-text-color($primary-clr);
+  height: 60px;
 }
 
 @import "mobile";
